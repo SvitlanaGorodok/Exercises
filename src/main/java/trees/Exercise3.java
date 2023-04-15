@@ -30,6 +30,4 @@ public class Exercise3 {
             return printTree(root.left) + root.val + " " + printTree(root.right);
         }
     }
-
-
 }
