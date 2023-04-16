@@ -6,18 +6,25 @@ public class Exercise1 {
         System.out.println(sqrt(16));
         System.out.println(sqrt(5));
         System.out.println(sqrt(4));
-        System.out.println(sqrt(1));
+        System.out.println(sqrt(0));
     }
 
     public static int sqrt(int number) {
-        if (number == 1 || number == 0){
-            return number;
-        }
-        for (int i = number/2; i > 1; i--) {
-            if( i * i <= number){
-                return i;
+        int low = 0;
+        int high = number;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            int result = mid * mid;
+            if (result == number) {
+                return mid;
+            }
+            if (result > number) {
+                high = mid - 1;
+            }
+            if (result < number){
+                low = mid + 1;
             }
         }
-        return 0;
+        return low - 1;
     }
 }
