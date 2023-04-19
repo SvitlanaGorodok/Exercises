@@ -1,4 +1,4 @@
-package lambdas;
+package lambdas.models;
 
 public enum Sex {
     MALE,

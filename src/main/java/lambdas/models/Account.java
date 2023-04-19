@@ -1,4 +1,4 @@
-package lambdas;
+package lambdas.models;
 
 import lombok.*;
 

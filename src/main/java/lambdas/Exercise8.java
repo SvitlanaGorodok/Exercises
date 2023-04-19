@@ -1,5 +1,7 @@
 package lambdas;
 
+import lambdas.models.Student;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

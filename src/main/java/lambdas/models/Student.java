@@ -1,4 +1,4 @@
-package lambdas;
+package lambdas.models;
 
 public class Student {private int id;
     private String firstName;
