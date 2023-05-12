@@ -10,5 +10,7 @@ public class Livelock {
 
         new Thread(() -> work.work(resource, worker2, worker1)).start();
         new Thread(() -> work.work(resource, worker1, worker2)).start();
+
+
     }
 }

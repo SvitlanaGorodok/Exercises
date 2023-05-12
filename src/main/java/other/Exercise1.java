@@ -26,5 +26,7 @@ public class Exercise1 {
             }
         }
         return low - 1;
+
+
     }
 }
